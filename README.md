@@ -14,27 +14,19 @@ Ensure you have a C++ compiler installed on your system, such as GCC or MSVC.
 Cloning the Repository
 Clone this repository to your local machine:
 
-bash
-Copy code
-git clone https://github.com/your-username/flight-simulation-system.git
-cd flight-simulation-system
+
+'''git clone https://github.com/your-username/flight-simulation-system.git
+cd flight-simulation-system'''
 Building the Program
 Open a terminal in the project directory.
 
 Compile the code using a C++ compiler:
+'''g++ -o flight_simulation flight_simulation.cpp -std=c++11'''
 
-bash
-Copy code
-g++ -o flight_simulation flight_simulation.cpp -std=c++11
 Run the program:
+'''./flight_simulation'''
 
-bash
-Copy code
-./flight_simulation
 For Windows users, run the compiled .exe file instead:
-
-bash
-Copy code
 flight_simulation.exe
 🕹️ Usage
 Interactive Controls
@@ -45,22 +37,23 @@ w	Display current weather condition for flights
 p	Pause/resume the simulation
 e	Exit the simulation
 Example Output
-lua
-Copy code
+
+'''
 +----------+----------+--------+---------+--------------+--------+-------+--------+
 | FlightID | Capacity | Fuel   | Speed   | Status       | Dist.  | ETA   | Status |
 +----------+----------+--------+---------+--------------+--------+-------+--------+
 | ZEDB234  | 20       | 74.35% | 675.0 km/h | In Flight | 50 km | 110 min | On Time |
 | ZYB234   | 40       | 89.50% | 472.5 km/h | Taking Off| 15 km | 130 min | Delayed |
 +----------+----------+--------+---------+--------------+--------+-------+--------+
-
+'''
 Passenger Details for ZEDB234:
+'''
 +------------+-----------+---------------+
 | Passenger  | Class     | Baggage Weight|
 +------------+-----------+---------------+
 | Passenger1 | Economy   | 20.3 kg       |
 | Passenger2 | Business  | 10.8 kg       |
-+------------+-----------+---------------+
++------------+-----------+---------------+ '''
 🛠️ Code Structure
 Airplane class: Manages airplane properties, statuses, passenger data, and fuel consumption.
 Passenger struct: Holds individual passenger details.
